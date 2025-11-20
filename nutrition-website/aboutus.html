@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About NutriGuide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #061024;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            width: 70;
+            background: rgba(5, 8, 22, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 5vw;
+            height: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .navbar-title {
+            color: rgb(246, 246, 251);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        .navbar-title span {
+            color:  #4dafff;
+        }
+        .navbar-links {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+        }
+        .navbar-links li a {
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            text-decoration: none;
+            color: lightgrey;
+            padding-bottom: 0.15rem;
+            border-bottom: 2px solid transparent;
+            transition: color 0.18s ease, border-color 0.18s ease; 
+        }
+        .navbar-links li a:hover {
+            color: #3fb7d8;
+            background: none;
+        }
+        .main-container {
+            max-width: 900px;
+            margin: 60px auto 30px auto;
+            background-color: #18346b ;
+            padding: 40px 25px 25px 25px;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(246, 246, 251, 0.08);
+        }
+
+        .sub-container-1 h1{
+            color: #fdfcfb;
+            font-size: 42px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .sub-container-1 p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #fefbfe;
+            margin-top: 38px;
+            margin-bottom: 22px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .profiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px;
+            justify-content: center;
+        }
+        .profile-card {
+            background-color: #f1f2f5;
+            border-radius: 14px;
+            padding: 26px 20px 18px 20px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 70%;
+            margin-bottom: 12px;
+        }
+        .profile-name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 7px;
+            color: #23275c;
+        }
+        .profile-title {
+            font-size: 17px;
+            color: #49816f;
+            margin-bottom: 6px;
+        }
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 6px;
+        }
+        .profile-links a {
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+        }
+        .profile-links svg {
+            width: 100%;
+            height: 100%;
+            fill: #23275c;
+            transition: fill 0.2s;
+        }
+        .profile-links a:hover svg {
+            fill: #4ED1F7;
+        }
+
+        @media (max-width:700px) {
+            .main-container {
+                padding: 18px 6px 12px 6px;
+            }
+            .profiles {
+                gap: 18px;
+            }
+        }
+        @media (max-width:400px) {
+            .sub-container-1 h1 {
+                font-size: 22px;
+                padding-top: 10px;
+            }
+            .sub-container-1 p,
+            .profile-title {
+                font-size: 12px;
+            }
+            .profile-name {
+                font-size: 14px;
+            }
+            .section-title {
+                font-size: 16px;
+            }
+            .profile-card {
+                width: 120px;
+                padding: 10px 6px 8px 6px;
+            }
+            .profile-photo {
+                width: 54px;
+                height: 54px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar-title">Nutri<span>Guide</span></div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="nutrition.html">Nutrition Foods</a></li>
+            <li><a href="progress.html">Project Progress</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <div class="sub-container-1">
+            <h1>About NutriGuide</h1>
+            <p>
+                NutriGuide helps you understand nutrition behind your favourite foods.<br>
+                Our mission is to make healthy eating easy and enjoyable by providing visual nutrition facts for popular Indian dishes.<br>
+                Whether you're tracking calories or curious about nutrients, we support your journey towards healthier choices!
+            </p>
+        </div>
+        <div>
+            <div class="section-title">Team Members</div>
+            <div class="profiles">
+                <!-- Team Member 1 -->
+                <div class="profile-card">
+                    <img src="profile1.jpeg" alt="Kusuma Profile" class="profile-photo">
+                    <div class="profile-name">Y Kusuma</div>
+                    <div class="profile-title">Survey Researcher</div>
+                    <div class="profile-links">
+                        <a href="www.linkedin.com/in/kusuma-yarramakala-912b28391" target="_blank" title="LinkedIn">
+                            <!-- LinkedIn SVG Icon -->
+                            <svg viewBox="0 0 32 32"><path d="M27 0H5C2.3 0 0 2.3 0 5v22c0 2.7 2.3 5 5 5h22c2.7 0 5-2.3 5-5V5c0-2.7-2.3-5-5-5zM10.7 27H6.6V12.3h4.1V27zm-2.1-17c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM27 27h-4.1v-7c0-2-.7-3.4-2.4-3.4-1.3 0-2.1.9-2.4 1.7-.1.3-.2.7-.2 1.1v7h-4.1V12.3h4.1v2c.2-.3 1.2-2 4-2 2.9 0 5 1.9 5 6v8.7z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/kruthika974?igsh=b2xueTRoMzY4NWRx" target="_blank" title="Instagram">
+                            <!-- Instagram SVG Icon -->
+                            <svg viewBox="0 0 32 32"><path d="M21 2H11C6.6 2 3 5.6 3 10v12c0 4.4 3.6 8 8 8h10c4.4 0 8-3.6 8-8V10c0-4.4-3.6-8-8-8zm-5 22c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm7-13.5c-.8 0-1.5-.7-1.5-1.5S23.2 7.5 24 7.5 25.5 8.2 25.5 9 24.8 10.5 24 10.5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="profile-card">
+                    <img src="profile2.jpeg" alt="Madhulika Profile" class="profile-photo">
+                    <div class="profile-name">R Madhulika</div>
+                    <div class="profile-title">Survey Researcher</div>
+                    <div class="profile-links">
+                        <a href="https://www.linkedin.com/in/madhulika-racherla-334513396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                            <svg viewBox="0 0 32 32"><path d="M27 0H5C2.3 0 0 2.3 0 5v22c0 2.7 2.3 5 5 5h22c2.7 0 5-2.3 5-5V5c0-2.7-2.3-5-5-5zM10.7 27H6.6V12.3h4.1V27zm-2.1-17c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM27 27h-4.1v-7c0-2-.7-3.4-2.4-3.4-1.3 0-2.1.9-2.4 1.7-.1.3-.2.7-.2 1.1v7h-4.1V12.3h4.1v2c.2-.3 1.2-2 4-2 2.9 0 5 1.9 5 6v8.7z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/madhulika9409?igsh=MWxwNjVlOWh4Z21xMA==" target="_blank" title="Instagram">
+                            <svg viewBox="0 0 32 32"><path d="M21 2H11C6.6 2 3 5.6 3 10v12c0 4.4 3.6 8 8 8h10c4.4 0 8-3.6 8-8V10c0-4.4-3.6-8-8-8zm-5 22c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm7-13.5c-.8 0-1.5-.7-1.5-1.5S23.2 7.5 24 7.5 25.5 8.2 25.5 9 24.8 10.5 24 10.5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="profile-card">
+                    <img src="profile3.jpeg" alt="Lahari Profile" class="profile-photo">
+                    <div class="profile-name">R Lahari</div>
+                    <div class="profile-title">Survey Researcher</div>
+                    <div class="profile-links">
+                        <a href="https://www.linkedin.com/in/sai-lahari-rasamala-b693b4396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                            <svg viewBox="0 0 32 32"><path d="M27 0H5C2.3 0 0 2.3 0 5v22c0 2.7 2.3 5 5 5h22c2.7 0 5-2.3 5-5V5c0-2.7-2.3-5-5-5zM10.7 27H6.6V12.3h4.1V27zm-2.1-17c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM27 27h-4.1v-7c0-2-.7-3.4-2.4-3.4-1.3 0-2.1.9-2.4 1.7-.1.3-.2.7-.2 1.1v7h-4.1V12.3h4.1v2c.2-.3 1.2-2 4-2 2.9 0 5 1.9 5 6v8.7z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/lahari___44?igsh=dTl3cjBhZm9iem1y&utm_source=ig_contact_invite" target="_blank" title="Instagram">
+                            <svg viewBox="0 0 32 32"><path d="M21 2H11C6.6 2 3 5.6 3 10v12c0 4.4 3.6 8 8 8h10c4.4 0 8-3.6 8-8V10c0-4.4-3.6-8-8-8zm-5 22c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm7-13.5c-.8 0-1.5-.7-1.5-1.5S23.2 7.5 24 7.5 25.5 8.2 25.5 9 24.8 10.5 24 10.5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="profile-card">
+                    <img src="profile4.jpeg" alt="Reshma Profile" class="profile-photo">
+                    <div class="profile-name">SK Reshma</div>
+                    <div class="profile-title">Survey Researcher</div>
+                    <div class="profile-links">
+                        <a href="https://www.linkedin.com/in/reshma-shaik-638b89398?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
+                            <svg viewBox="0 0 32 32"><path d="M27 0H5C2.3 0 0 2.3 0 5v22c0 2.7 2.3 5 5 5h22c2.7 0 5-2.3 5-5V5c0-2.7-2.3-5-5-5zM10.7 27H6.6V12.3h4.1V27zm-2.1-17c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3zM27 27h-4.1v-7c0-2-.7-3.4-2.4-3.4-1.3 0-2.1.9-2.4 1.7-.1.3-.2.7-.2 1.1v7h-4.1V12.3h4.1v2c.2-.3 1.2-2 4-2 2.9 0 5 1.9 5 6v8.7z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/reshma._._.shaik?igsh=MW81YTA1Y3E4a25ldA==&utm_source=ig_contact_invite" target="_blank" title="Instagram">
+                            <svg viewBox="0 0 32 32"><path d="M21 2H11C6.6 2 3 5.6 3 10v12c0 4.4 3.6 8 8 8h10c4.4 0 8-3.6 8-8V10c0-4.4-3.6-8-8-8zm-5 22c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm7-13.5c-.8 0-1.5-.7-1.5-1.5S23.2 7.5 24 7.5 25.5 8.2 25.5 9 24.8 10.5 24 10.5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

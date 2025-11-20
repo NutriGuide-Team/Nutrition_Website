@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NutriGuide | Food Nutrition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Font for professional look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <!-- Top navigation bar -->
+  <header class="nav">
+    <div class="nav__logo">Nutri<span>Guide</span></div>
+    <nav class="nav__links">
+      <a href="index.html" class="nav__link nav__link--active">Home</a>
+      <a href="login.html">Login</a>
+      <a href="nutrition.html">Nutriton Foods</a>
+      <a href="progress.html">Project Progress</a>
+      <a href="aboutus.html">About Us </a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero__text">
+        <h1 class="hero__title">
+          Understand the nutrition behind your favourite foods.
+        </h1>
+        <p class="hero__subtitle">
+          NutriGuide is a mini web app that visualises approximate nutrition
+          values for popular dishes like dosa, idly, pongal, chicken biryani and pizza.
+        </p>
+        <div class="hero__actions">
+          <a href="nutrition.html" class="btn btn--primary">View Nutrition Data</a>
+          <a href="progress.html" class="btn btn--ghost">View Project Timeline</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- EDUCATION / TIPS SECTION -->
+    <section class="section section--alt">
+      <div class="section__header">
+        <h2>How to interpret these Question?</h2>
+        <p>Some simple guidelines you can mention</p>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip-card">
+          <h3>1. Focus on the whole day</h3>
+          <p>
+            A single dish doesn’t define your health. Look at how many
+            calories and nutrients you eat across the entire day.
+          </p>
+        </article>
+
+        <article class="tip-card">
+          <h3>2. Pair carbs with protein</h3>
+          <p>
+            Try combining dishes like dosa or idly with protein-rich sides
+            such as sambar or chutney that contains lentils.
+          </p>
+        </article>
+
+        <article class="tip-card">
+          <h3>3. Enjoy, but balance</h3>
+          <p>
+            Biryani and pizza can still fit in if you balance them with
+            lighter meals and regular activity through the week.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECT PROGRESS CALLOUT -->
+    <section class="section callout">
+      <div class="callout__card glass">
+        <h2>How was this project built?</h2>
+        <p>
+          See the week-by-week progress- all the six weeks included.
+        </p>
+        <a href="progress.html" class="btn btn--primary">Open Progress Timeline</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 NutriGuide Project by Y Kusuma, R Madhulika, R Lahari, SK Reshma</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
